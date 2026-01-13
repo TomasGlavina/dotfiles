@@ -1,0 +1,24 @@
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# reload configuration 
+# Control + Shift + comma 
+
+# Config syntax crash course
+# ==========================
+
+theme = Rose Pine 
+
+background = 000 
+background-opacity = 0.85
+
+font-family = ""
+font-family = "Maple Mono Normal NL" 
+font-size = 14
+font-style = Regular
+font-style-bold = Bold
+font-style-italic = Bold Italic
+font-style-bold-italic = Bold Italic
+window-padding-y = 0
+window-padding-x = 0
+window-save-state = always

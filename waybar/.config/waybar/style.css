@@ -1,0 +1,37 @@
+* {
+    font-family: 'JetBrains Mono NL', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #C8C093;
+}
+
+window#waybar {
+    background-color: #16161D;
+    color: #dcd7ba;
+    border-bottom: 1px solid #363646;
+}
+
+#workspaces {
+    background-color: transparent;
+    padding: 0 6px;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+    background-color: #2D4F67;
+    color: #1f1f28;
+    border-color: #2D4F67;
+}
+
+#bluetooth, #power-profiles-daemon, #network, #battery, #pulseaudio, #custom-clock {
+    padding-right: 10px;
+    padding-left: 10px;
+}

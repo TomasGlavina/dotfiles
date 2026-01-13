@@ -1,0 +1,60 @@
+ignore-empty-password
+disable-caps-lock-text
+
+font=JetBrains Mono
+image=~/Pictures/wallpapers/forest-dark.jpg
+scaling=fill
+
+indicator-radius=200
+indicator-thickness=15
+
+# Rosé Pine (main)
+# base     #191724
+# surface  #1f1d2e
+# overlay  #26233a
+# muted    #6e6a86
+# text     #e0def4
+# love     #eb6f92
+# gold     #f6c177
+# pine     #31748f
+# foam     #9ccfd8
+# iris     #c4a7e7
+# (see source for full list) :contentReference[oaicite:2]{index=2}
+
+# Background fallback (used behind image too)
+color=191724FF
+
+# Indicator + states
+inside-color=19172499
+inside-clear-color=1f1d2e99
+inside-ver-color=31748f99
+inside-wrong-color=eb6f9299
+inside-caps-lock-color=c4a7e799
+
+ring-color=6e6a86FF
+ring-clear-color=f6c177FF
+ring-ver-color=9ccfd8FF
+ring-wrong-color=eb6f92FF
+ring-caps-lock-color=c4a7e7FF
+
+line-color=26233aFF
+line-clear-color=f6c177FF
+line-ver-color=9ccfd8FF
+line-wrong-color=eb6f92FF
+line-caps-lock-color=c4a7e7FF
+
+separator-color=00000000
+
+# Key highlight segments
+key-hl-color=9ccfd8FF
+bs-hl-color=eb6f92FF
+caps-lock-key-hl-color=c4a7e7FF
+caps-lock-bs-hl-color=eb6f92FF
+
+# Text (make visible; you can set alpha to 00 to hide)
+text-color=e0def4FF
+text-clear-color=f6c177FF
+text-ver-color=9ccfd8FF
+text-wrong-color=eb6f92FF
+text-caps-lock-color=c4a7e7FF
+
