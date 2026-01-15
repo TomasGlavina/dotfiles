@@ -3,14 +3,14 @@
 	"position": "top",
 	"height": 18,
 	"modules-left": ["sway/workspaces", "sway/window"],
-	"modules-center": [],
+	"modules-center": ["custom/clock"],
 	"modules-right": [
+		"network",
 		"bluetooth",
 		"power-profiles-daemon",
-		"network",
+		"backlight",
 		"battery",
 		"pulseaudio",
-        "custom/clock"
 	],
 
 	"sway/window": {

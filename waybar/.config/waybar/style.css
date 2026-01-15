@@ -1,6 +1,6 @@
 * {
-    font-family: 'JetBrains Mono NL', sans-serif;
-    font-weight: bold;
+    font-family: 'Maple Mono Normal NL', sans-serif;
+    font-weight: 500;
     font-size: 14px;
     color: #C8C093;
 }
@@ -31,7 +31,7 @@ window#waybar {
     border-color: #2D4F67;
 }
 
-#bluetooth, #power-profiles-daemon, #network, #battery, #pulseaudio, #custom-clock {
+#backlight, #bluetooth, #power-profiles-daemon, #network, #battery, #pulseaudio, #custom-clock {
     padding-right: 10px;
     padding-left: 10px;
 }
