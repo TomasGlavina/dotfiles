@@ -79,6 +79,9 @@ bindsym $mod+Space exec $menu
 bindsym $mod+b exec $browser
 bindsym $mod+n exec nemo
 
+# Open YouTube Music in Waterfox Kiosk mode (No UI)
+bindsym $mod+Shift+m exec waterfox --no-remote -P music --kiosk https://music.youtube.com
+
 #System
 bindsym $mod2+l exec $lock
 bindsym $mod+Shift+b exec blueman-manager

@@ -14,7 +14,16 @@
 	],
 
 	"sway/window": {
-		"max-length": 50
+		"format": "{}",
+		"max-length": 50,
+		"rewrite": {
+		// Regex to replace /home/username with ~
+		"^/home/[^/]+(.*)": "~$1",
+		// Optional: specific rewrite for when you are exactly at /home/username
+		"^/home/[^/]+$": "~",
+		// Optional: Shorten 'Mozilla Firefox' to just 'Firefox' to save space
+		"(.*) - Waterfox": "🦊 $1"
+		}	
 	},
 	"battery": {
 		"format": "bat:{capacity}%",
