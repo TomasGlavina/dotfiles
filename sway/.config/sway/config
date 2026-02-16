@@ -29,17 +29,38 @@ font pango:Maple Mono NL 14
 set $bg ~/Pictures/wallpapers/forest-dark.jpg 
 
 output * bg $bg fill
-output eDP-1 mode 1920x1080@144.003Hz 
+output eDP-1 mode 1920x1080@144.003Hz position 3840 0
+output DP-2 mode 3840x2160@59.997Hz position 0 0
+output DP-2 scale 1.2
+
+bindswitch lid:on output eDP-1 disable
+bindswitch lid:off output eDP-1 enable
+
+
+#Workspaces 
+
+workspace 1 output DP-2
+workspace 2 output DP-2
+workspace 3 output DP-2
+workspace 4 output DP-2
+workspace 5 output DP-2
+workspace 6 output eDP-1
+workspace 7 output eDP-1
+workspace 8 output eDP-1
+workspace 9 output eDP-1
+workspace 10 output eDP-1
+
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
 ### Idle configuration
-#  exec swayidle -w \
-#           timeout 300 'swaylock -f -i $bg' \
-#           timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#           before-sleep 'swaylock -f -i $bg'
+exec_always --no-startup-id swayidle -w \
+    timeout 300 'swaylock -f -i $bg' \
+    timeout 310 'swaymsg "output * dpms off"' \
+    resume 'swaymsg "output * dpms on"' \
+    before-sleep 'swaylock -f -i $bg'
 
 set $lock swaylock --hide-keyboard-layout -i $bg
-bindswitch --reload --locked lid:on exec $lock
+    bindswitch --reload --locked lid:on exec $lock
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
