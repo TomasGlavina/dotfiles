@@ -30,8 +30,8 @@ set $bg ~/Pictures/wallpapers/forest-dark.jpg
 
 output * bg $bg fill
 output eDP-1 mode 1920x1080@144.003Hz position 3840 0
-output DP-2 mode 3840x2160@59.997Hz position 0 0
-output DP-2 scale 1.2
+output DP-2 mode 2560x1440@59.951Hz position 0 0
+output DP-2 scale 1
 
 bindswitch lid:on output eDP-1 disable
 bindswitch lid:off output eDP-1 enable
@@ -55,8 +55,8 @@ workspace 10 output eDP-1
 ### Idle configuration
 exec_always --no-startup-id swayidle -w \
     timeout 300 'swaylock -f -i $bg' \
-    timeout 310 'swaymsg "output * dpms off"' \
-    resume 'swaymsg "output * dpms on"' \
+    timeout 400 'swaymsg "output DP-2 dpms off"' \
+    resume 'swaymsg "output DP-2 dpms on"' \
     before-sleep 'swaylock -f -i $bg'
 
 set $lock swaylock --hide-keyboard-layout -i $bg
@@ -82,6 +82,14 @@ input type:keyboard {
 }
 
 input "65261:18008:Keebart_3w6_RGB" {
+    xkb_layout "us"
+}
+
+input "1389:49271:I-CHIP_YUNZII_B75_PRO_MAX_2.4G" {
+    xkb_layout "us" 
+}
+
+input "1389:49271:I-CHIP_YUNZII_B75_PRO_MAX_2.4G_Keyboard" {
     xkb_layout "us"
 }
 
